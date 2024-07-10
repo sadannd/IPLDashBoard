@@ -1,0 +1,5625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.java.ipldashboard.IpldashboardApplicationTests" time="15.625" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\IPL React SpringBoot App\ipldashboard\target\test-classes;E:\IPL React SpringBoot App\ipldashboard\target\classes;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.3.1\spring-boot-starter-actuator-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.1\spring-boot-starter-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.1\spring-boot-starter-logging-3.3.1.jar;C:\Users\lenovo\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\lenovo\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\lenovo\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\lenovo\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\lenovo\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.3.1\spring-boot-actuator-autoconfigure-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-actuator\3.3.1\spring-boot-actuator-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-observation\1.13.1\micrometer-observation-1.13.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-commons\1.13.1\micrometer-commons-1.13.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-jakarta9\1.13.1\micrometer-jakarta9-1.13.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-core\1.13.1\micrometer-core-1.13.1.jar;C:\Users\lenovo\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\lenovo\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-batch\3.3.1\spring-boot-starter-batch-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.1\spring-boot-starter-jdbc-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\batch\spring-batch-core\5.1.2\spring-batch-core-5.1.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\batch\spring-batch-infrastructure\5.1.2\spring-batch-infrastructure-5.1.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\retry\spring-retry\2.0.6\spring-retry-2.0.6.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aop\6.1.10\spring-aop-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-beans\6.1.10\spring-beans-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-context\6.1.10\spring-context-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-tx\6.1.10\spring-tx-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.1\spring-boot-starter-data-jpa-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.1\spring-boot-starter-aop-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\lenovo\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\lenovo\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\lenovo\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\lenovo\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\lenovo\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\lenovo\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\lenovo\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\lenovo\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\lenovo\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\lenovo\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\lenovo\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\lenovo\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\lenovo\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\data\spring-data-jpa\3.3.1\spring-data-jpa-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\data\spring-data-commons\3.3.1\spring-data-commons-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-orm\6.1.10\spring-orm-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aspects\6.1.10\spring-aspects-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.1\spring-boot-starter-web-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.1\spring-boot-starter-json-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.1\jackson-module-parameter-names-2.17.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.1\spring-boot-starter-tomcat-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.25\tomcat-embed-core-10.1.25.jar;C:\Users\lenovo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.25\tomcat-embed-el-10.1.25.jar;C:\Users\lenovo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.25\tomcat-embed-websocket-10.1.25.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-web\6.1.10\spring-web-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-webmvc\6.1.10\spring-webmvc-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-expression\6.1.10\spring-expression-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-devtools\3.3.1\spring-boot-devtools-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot\3.3.1\spring-boot-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.1\spring-boot-autoconfigure-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\hsqldb\hsqldb\2.7.3\hsqldb-2.7.3.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.1\spring-boot-starter-test-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-test\3.3.1\spring-boot-test-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.1\spring-boot-test-autoconfigure-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\lenovo\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\lenovo\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\lenovo\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\lenovo\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\lenovo\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\lenovo\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\lenovo\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\lenovo\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\lenovo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.17\byte-buddy-agent-1.14.17.jar;C:\Users\lenovo\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\lenovo\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\lenovo\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\lenovo\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-core\6.1.10\spring-core-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jcl\6.1.10\spring-jcl-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-test\6.1.10\spring-test-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\batch\spring-batch-test\5.1.2\spring-batch-test-5.1.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jdbc\6.1.10\spring-jdbc-6.1.10.jar;C:\Users\lenovo\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\lenovo\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="E:\jdk-17_windows-x64_bin\jdk-17.0.11\bin"/>
+    <property name="sun.java.command" value="C:\Users\lenovo\AppData\Local\Temp\surefire6804282778136886314\surefirebooter-20240709161740190_3.jar C:\Users\lenovo\AppData\Local\Temp\surefire6804282778136886314 2024-07-09T16-17-39_892-jvmRun1 surefire-20240709161740190_1tmp surefire_0-20240709161740190_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\IPL React SpringBoot App\ipldashboard\target\test-classes;E:\IPL React SpringBoot App\ipldashboard\target\classes;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.3.1\spring-boot-starter-actuator-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.1\spring-boot-starter-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.1\spring-boot-starter-logging-3.3.1.jar;C:\Users\lenovo\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\lenovo\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\lenovo\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\lenovo\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\lenovo\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.3.1\spring-boot-actuator-autoconfigure-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-actuator\3.3.1\spring-boot-actuator-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-observation\1.13.1\micrometer-observation-1.13.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-commons\1.13.1\micrometer-commons-1.13.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-jakarta9\1.13.1\micrometer-jakarta9-1.13.1.jar;C:\Users\lenovo\.m2\repository\io\micrometer\micrometer-core\1.13.1\micrometer-core-1.13.1.jar;C:\Users\lenovo\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\lenovo\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-batch\3.3.1\spring-boot-starter-batch-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.1\spring-boot-starter-jdbc-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\batch\spring-batch-core\5.1.2\spring-batch-core-5.1.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\batch\spring-batch-infrastructure\5.1.2\spring-batch-infrastructure-5.1.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\retry\spring-retry\2.0.6\spring-retry-2.0.6.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aop\6.1.10\spring-aop-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-beans\6.1.10\spring-beans-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-context\6.1.10\spring-context-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-tx\6.1.10\spring-tx-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.1\spring-boot-starter-data-jpa-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.1\spring-boot-starter-aop-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\lenovo\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\lenovo\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\lenovo\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\lenovo\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\lenovo\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\lenovo\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\lenovo\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\lenovo\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\lenovo\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\lenovo\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\lenovo\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\lenovo\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\lenovo\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\lenovo\.m2\repository\org\springframework\data\spring-data-jpa\3.3.1\spring-data-jpa-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\data\spring-data-commons\3.3.1\spring-data-commons-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-orm\6.1.10\spring-orm-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-aspects\6.1.10\spring-aspects-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.1\spring-boot-starter-web-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.1\spring-boot-starter-json-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.1\jackson-module-parameter-names-2.17.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.1\spring-boot-starter-tomcat-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.25\tomcat-embed-core-10.1.25.jar;C:\Users\lenovo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.25\tomcat-embed-el-10.1.25.jar;C:\Users\lenovo\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.25\tomcat-embed-websocket-10.1.25.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-web\6.1.10\spring-web-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-webmvc\6.1.10\spring-webmvc-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-expression\6.1.10\spring-expression-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-devtools\3.3.1\spring-boot-devtools-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot\3.3.1\spring-boot-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.1\spring-boot-autoconfigure-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\hsqldb\hsqldb\2.7.3\hsqldb-2.7.3.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.1\spring-boot-starter-test-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-test\3.3.1\spring-boot-test-3.3.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.1\spring-boot-test-autoconfigure-3.3.1.jar;C:\Users\lenovo\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\lenovo\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\lenovo\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\lenovo\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\lenovo\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\lenovo\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\lenovo\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\lenovo\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\lenovo\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\lenovo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.17\byte-buddy-agent-1.14.17.jar;C:\Users\lenovo\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\lenovo\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\lenovo\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\lenovo\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-core\6.1.10\spring-core-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jcl\6.1.10\spring-jcl-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-test\6.1.10\spring-test-6.1.10.jar;C:\Users\lenovo\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\lenovo\.m2\repository\org\springframework\batch\spring-batch-test\5.1.2\spring-batch-test-5.1.2.jar;C:\Users\lenovo\.m2\repository\org\springframework\spring-jdbc\6.1.10\spring-jdbc-6.1.10.jar;C:\Users\lenovo\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\lenovo\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lenovo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="E:\jdk-17_windows-x64_bin\jdk-17.0.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\IPL React SpringBoot App\ipldashboard"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\lenovo\AppData\Local\Temp\surefire6804282778136886314\surefirebooter-20240709161740190_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="lenovo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\lenovo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\lenovo\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="E:\IPL React SpringBoot App\ipldashboard"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="18288"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="E:\jdk-17_windows-x64_bin\jdk-17.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\lenovo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lenovo\bin;E:\jdk-17_windows-x64_bin\jdk-17.0.11\bin;E:\jdk-22_windows-x64_bin\jdk-22.0.1\bin;C:\Users\lenovo\AppData\Local\Temp\Temp1_WINDOWS.X64_213000_db_home.zip\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;E:\jdk-11.0.9+11-20220616T021525Z-001\jdk-11.0.9+11\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs;C:\Users\lenovo\AppData\Roaming\npm;E:\jdk-17_windows-x64_bin\jdk-17.0.11\bin;C:\Users\lenovo\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\lenovo\AppData\Local\Programs\Python\Python39;C:\Users\lenovo\Downloads\MinGW\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\lenovo\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Windows\System32\Wbem;C:\Users\lenovo\AppData\Local\Pandoc;C:\Users\lenovo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lenovo\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;E:\gradle-8.6-bin\gradle-8.6\bin;C:\Users\lenovo\AppData\Roaming\npm;E:\jdk-22_windows-x64_bin\jdk-22.0.1\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Users\lenovo\.foundry\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[ipldashboard] "/>
+  </properties>
+  <testcase name="contextLoads" classname="io.java.ipldashboard.IpldashboardApplicationTests" time="1.511">
+    <system-out><![CDATA[16:17:42.242 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.java.ipldashboard.IpldashboardApplicationTests]: IpldashboardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:17:42.407 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.java.ipldashboard.IpldashboardApplication for test class io.java.ipldashboard.IpldashboardApplicationTests
+16:17:42.708 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-07-09T16:17:43.195-05:00  INFO 18288 --- [ipldashboard] [           main] i.j.i.IpldashboardApplicationTests       : Starting IpldashboardApplicationTests using Java 17.0.11 with PID 18288 (started by lenovo in E:\IPL React SpringBoot App\ipldashboard)
+2024-07-09T16:17:43.198-05:00  INFO 18288 --- [ipldashboard] [           main] i.j.i.IpldashboardApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T16:17:44.945-05:00  INFO 18288 --- [ipldashboard] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T16:17:45.037-05:00  INFO 18288 --- [ipldashboard] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2024-07-09T16:17:46.258-05:00  WARN 18288 --- [ipldashboard] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'batchConfig' of type [io.java.ipldashboard.data.BatchConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-09T16:17:46.275-05:00  WARN 18288 --- [ipldashboard] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [org.springframework.jdbc.datasource.DriverManagerDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-09T16:17:46.292-05:00  WARN 18288 --- [ipldashboard] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-09T16:17:46.330-05:00  WARN 18288 --- [ipldashboard] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-09T16:17:46.346-05:00  WARN 18288 --- [ipldashboard] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-07-09T16:17:47.177-05:00  INFO 18288 --- [ipldashboard] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T16:17:47.302-05:00  INFO 18288 --- [ipldashboard] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T16:17:47.371-05:00  INFO 18288 --- [ipldashboard] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T16:17:47.910-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T16:17:47.978-05:00  WARN 18288 --- [ipldashboard] [           main] org.hibernate.orm.deprecation            : HHH90000025: HSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T16:17:49.319-05:00  INFO 18288 --- [ipldashboard] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table match (id bigint not null, city varchar(255), date date, match_winner varchar(255), player_of_match varchar(255), result varchar(255), result_margin varchar(255), team1 varchar(255), team2 varchar(255), toss_decision varchar(255), toss_winner varchar(255), umpire1 varchar(255), umpire2 varchar(255), venue varchar(255), primary key (id))
+Hibernate: create table team (id bigint not null, team_name varchar(255), total_matches bigint not null, total_wins bigint not null, primary key (id))
+2024-07-09T16:17:49.425-05:00  INFO 18288 --- [ipldashboard] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T16:17:50.096-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T16:17:51.354-05:00  WARN 18288 --- [ipldashboard] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T16:17:51.467-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2024-07-09T16:17:53.328-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-09T16:17:53.408-05:00  INFO 18288 --- [ipldashboard] [           main] i.j.i.IpldashboardApplicationTests       : Started IpldashboardApplicationTests in 10.745 seconds (process running for 12.525)
+2024-07-09T16:17:53.609-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2024-07-09T16:17:53.645-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=importUserJob]] launched with the following parameters: [{}]
+2024-07-09T16:17:53.698-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2024-07-09T16:17:55.332-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 1s632ms
+2024-07-09T16:17:55.337-05:00  INFO 18288 --- [ipldashboard] [           main] .j.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+Hibernate: select m1_0.id,m1_0.city,m1_0.date,m1_0.match_winner,m1_0.player_of_match,m1_0.result,m1_0.result_margin,m1_0.team1,m1_0.team2,m1_0.toss_decision,m1_0.toss_winner,m1_0.umpire1,m1_0.umpire2,m1_0.venue from match m1_0
+id is:-335982
+date is:-2008-04-18
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-335983
+date is:-2008-04-19
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-335984
+date is:-2008-04-19
+venue is:-Feroz Shah Kotla
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-335985
+date is:-2008-04-20
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-335986
+date is:-2008-04-20
+venue is:-Eden Gardens
+team 1 is:-Deccan Chargers
+team 2 is:-Kolkata Knight Riders
+id is:-335987
+date is:-2008-04-21
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-335988
+date is:-2008-04-22
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-335989
+date is:-2008-04-23
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-335990
+date is:-2008-04-24
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Rajasthan Royals
+id is:-335991
+date is:-2008-04-25
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-335992
+date is:-2008-04-26
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-335993
+date is:-2008-04-26
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-335994
+date is:-2008-04-27
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Mumbai Indians
+team 2 is:-Deccan Chargers
+id is:-335995
+date is:-2008-04-27
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-335996
+date is:-2008-04-28
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-335997
+date is:-2008-04-29
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-335998
+date is:-2008-04-30
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-335999
+date is:-2008-05-01
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Kings XI Punjab
+id is:-336000
+date is:-2008-05-01
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-336001
+date is:-2008-05-02
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-336002
+date is:-2008-05-25
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-336003
+date is:-2008-05-03
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-336004
+date is:-2008-05-04
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-336005
+date is:-2008-05-04
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-336006
+date is:-2008-05-05
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-336007
+date is:-2008-05-06
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-336008
+date is:-2008-05-07
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-336009
+date is:-2008-05-08
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-336010
+date is:-2008-05-08
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-336011
+date is:-2008-05-09
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Rajasthan Royals
+id is:-336012
+date is:-2008-05-28
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-336013
+date is:-2008-05-10
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-336014
+date is:-2008-05-11
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Deccan Chargers
+id is:-336015
+date is:-2008-05-11
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-336016
+date is:-2008-05-12
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-336017
+date is:-2008-05-13
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-336018
+date is:-2008-05-14
+venue is:-Wankhede Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-336019
+date is:-2008-05-28
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-336020
+date is:-2008-05-15
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Deccan Chargers
+id is:-336021
+date is:-2008-05-16
+venue is:-Wankhede Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-336022
+date is:-2008-05-17
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-336023
+date is:-2008-05-17
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-336024
+date is:-2008-05-18
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Mumbai Indians
+team 2 is:-Deccan Chargers
+id is:-336025
+date is:-2008-05-18
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-336026
+date is:-2008-05-19
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-336027
+date is:-2008-05-20
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-336028
+date is:-2008-05-21
+venue is:-Wankhede Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-336029
+date is:-2008-05-21
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-336031
+date is:-2008-05-23
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Deccan Chargers
+team 2 is:-Kings XI Punjab
+id is:-336032
+date is:-2008-05-24
+venue is:-Feroz Shah Kotla
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-336033
+date is:-2008-05-24
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-336034
+date is:-2008-05-03
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Deccan Chargers
+id is:-336035
+date is:-2008-05-25
+venue is:-Eden Gardens
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-336036
+date is:-2008-05-26
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-336037
+date is:-2008-05-27
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Chennai Super Kings
+id is:-336038
+date is:-2008-05-30
+venue is:-Wankhede Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-336039
+date is:-2008-05-31
+venue is:-Wankhede Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-336040
+date is:-2008-06-01
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-392181
+date is:-2009-04-18
+venue is:-Newlands
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-392182
+date is:-2009-04-18
+venue is:-Newlands
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-392183
+date is:-2009-04-19
+venue is:-Newlands
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-392184
+date is:-2009-04-19
+venue is:-Newlands
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Deccan Chargers
+id is:-392185
+date is:-2009-04-20
+venue is:-St George's Park
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-392186
+date is:-2009-04-21
+venue is:-Kingsmead
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-392188
+date is:-2009-04-22
+venue is:-Newlands
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-392189
+date is:-2009-04-23
+venue is:-Kingsmead
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-392190
+date is:-2009-04-23
+venue is:-Newlands
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-392191
+date is:-2009-04-24
+venue is:-Kingsmead
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-392192
+date is:-2009-04-25
+venue is:-Kingsmead
+team 1 is:-Deccan Chargers
+team 2 is:-Mumbai Indians
+id is:-392194
+date is:-2009-04-26
+venue is:-St George's Park
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-392195
+date is:-2009-04-26
+venue is:-Newlands
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-392196
+date is:-2009-04-27
+venue is:-Kingsmead
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-392197
+date is:-2009-04-27
+venue is:-St George's Park
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-392198
+date is:-2009-04-28
+venue is:-SuperSport Park
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-392199
+date is:-2009-04-29
+venue is:-Kingsmead
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-392200
+date is:-2009-04-29
+venue is:-Kingsmead
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-392201
+date is:-2009-04-30
+venue is:-SuperSport Park
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-392202
+date is:-2009-04-30
+venue is:-SuperSport Park
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-392203
+date is:-2009-05-01
+venue is:-Buffalo Park
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-392204
+date is:-2009-05-01
+venue is:-Kingsmead
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-392205
+date is:-2009-05-02
+venue is:-St George's Park
+team 1 is:-Deccan Chargers
+team 2 is:-Rajasthan Royals
+id is:-392206
+date is:-2009-05-02
+venue is:-New Wanderers Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-392207
+date is:-2009-05-03
+venue is:-St George's Park
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-392208
+date is:-2009-05-03
+venue is:-New Wanderers Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-392209
+date is:-2009-05-04
+venue is:-Buffalo Park
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-392210
+date is:-2009-05-05
+venue is:-Kingsmead
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-392211
+date is:-2009-05-05
+venue is:-Kingsmead
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-392212
+date is:-2009-05-06
+venue is:-SuperSport Park
+team 1 is:-Deccan Chargers
+team 2 is:-Mumbai Indians
+id is:-392213
+date is:-2009-05-07
+venue is:-SuperSport Park
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-392214
+date is:-2009-05-07
+venue is:-SuperSport Park
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-392215
+date is:-2009-05-08
+venue is:-Buffalo Park
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-392216
+date is:-2009-05-09
+venue is:-De Beers Diamond Oval
+team 1 is:-Deccan Chargers
+team 2 is:-Kings XI Punjab
+id is:-392217
+date is:-2009-05-09
+venue is:-De Beers Diamond Oval
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-392218
+date is:-2009-05-10
+venue is:-St George's Park
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-392219
+date is:-2009-05-10
+venue is:-New Wanderers Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-392220
+date is:-2009-05-11
+venue is:-De Beers Diamond Oval
+team 1 is:-Deccan Chargers
+team 2 is:-Rajasthan Royals
+id is:-392221
+date is:-2009-05-12
+venue is:-SuperSport Park
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-392222
+date is:-2009-05-12
+venue is:-SuperSport Park
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-392223
+date is:-2009-05-13
+venue is:-Kingsmead
+team 1 is:-Delhi Capitals
+team 2 is:-Deccan Chargers
+id is:-392224
+date is:-2009-05-14
+venue is:-Kingsmead
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-392225
+date is:-2009-05-14
+venue is:-Kingsmead
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-392226
+date is:-2009-05-15
+venue is:-OUTsurance Oval
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-392227
+date is:-2009-05-16
+venue is:-St George's Park
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-392228
+date is:-2009-05-16
+venue is:-New Wanderers Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Deccan Chargers
+id is:-392229
+date is:-2009-05-17
+venue is:-New Wanderers Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Deccan Chargers
+id is:-392230
+date is:-2009-05-17
+venue is:-OUTsurance Oval
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-392231
+date is:-2009-05-18
+venue is:-SuperSport Park
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-392232
+date is:-2009-05-19
+venue is:-New Wanderers Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-392233
+date is:-2009-05-20
+venue is:-Kingsmead
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-392234
+date is:-2009-05-20
+venue is:-Kingsmead
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-392235
+date is:-2009-05-21
+venue is:-SuperSport Park
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-392236
+date is:-2009-05-21
+venue is:-SuperSport Park
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Deccan Chargers
+id is:-392237
+date is:-2009-05-22
+venue is:-SuperSport Park
+team 1 is:-Delhi Capitals
+team 2 is:-Deccan Chargers
+id is:-392238
+date is:-2009-05-23
+venue is:-New Wanderers Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-392239
+date is:-2009-05-24
+venue is:-New Wanderers Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-419106
+date is:-2010-03-12
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Deccan Chargers
+id is:-419107
+date is:-2010-03-13
+venue is:-Brabourne Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-419108
+date is:-2010-03-13
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-419109
+date is:-2010-03-14
+venue is:-Eden Gardens
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-419110
+date is:-2010-03-14
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Deccan Chargers
+team 2 is:-Chennai Super Kings
+id is:-419111
+date is:-2010-03-15
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-419112
+date is:-2010-03-16
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-419113
+date is:-2010-03-16
+venue is:-Eden Gardens
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-419114
+date is:-2010-03-17
+venue is:-Feroz Shah Kotla
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-419115
+date is:-2010-03-18
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-419116
+date is:-2010-03-19
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-419117
+date is:-2010-03-19
+venue is:-Barabati Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Kings XI Punjab
+id is:-419118
+date is:-2010-03-20
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-419119
+date is:-2010-03-20
+venue is:-Brabourne Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-419120
+date is:-2010-03-21
+venue is:-Barabati Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-419121
+date is:-2010-03-21
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-419122
+date is:-2010-03-22
+venue is:-Brabourne Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-419123
+date is:-2010-03-23
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-419124
+date is:-2010-03-24
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-419125
+date is:-2010-03-25
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-419126
+date is:-2010-03-26
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Deccan Chargers
+team 2 is:-Rajasthan Royals
+id is:-419127
+date is:-2010-03-27
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-419128
+date is:-2010-03-25
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-419129
+date is:-2010-03-28
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-419130
+date is:-2010-03-28
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Mumbai Indians
+team 2 is:-Deccan Chargers
+id is:-419131
+date is:-2010-03-29
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-419132
+date is:-2010-03-30
+venue is:-Brabourne Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-419133
+date is:-2010-03-31
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-419134
+date is:-2010-03-31
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-419135
+date is:-2010-04-01
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Deccan Chargers
+id is:-419136
+date is:-2010-04-02
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-419137
+date is:-2010-04-03
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-419138
+date is:-2010-04-03
+venue is:-Brabourne Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Deccan Chargers
+id is:-419139
+date is:-2010-04-04
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-419140
+date is:-2010-04-04
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-419141
+date is:-2010-04-05
+venue is:-Vidarbha Cricket Association Stadium, Jamtha
+team 1 is:-Rajasthan Royals
+team 2 is:-Deccan Chargers
+id is:-419142
+date is:-2010-04-06
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-419143
+date is:-2010-04-07
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-419144
+date is:-2010-04-07
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-419145
+date is:-2010-04-08
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Deccan Chargers
+id is:-419146
+date is:-2010-04-09
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-419147
+date is:-2010-04-10
+venue is:-Vidarbha Cricket Association Stadium, Jamtha
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-419148
+date is:-2010-04-10
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-419149
+date is:-2010-04-11
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-419150
+date is:-2010-04-11
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-419151
+date is:-2010-04-12
+venue is:-Vidarbha Cricket Association Stadium, Jamtha
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-419152
+date is:-2010-04-13
+venue is:-Brabourne Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-419153
+date is:-2010-04-13
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-419154
+date is:-2010-04-14
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-419155
+date is:-2010-04-15
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-419156
+date is:-2010-04-16
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Deccan Chargers
+id is:-419157
+date is:-2010-04-17
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-419158
+date is:-2010-04-17
+venue is:-Eden Gardens
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-419159
+date is:-2010-04-18
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-419160
+date is:-2010-04-18
+venue is:-Feroz Shah Kotla
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-419161
+date is:-2010-04-19
+venue is:-Eden Gardens
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-419162
+date is:-2010-04-21
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-419163
+date is:-2010-04-22
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-419164
+date is:-2010-04-24
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-419165
+date is:-2010-04-25
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-501198
+date is:-2011-04-08
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-501199
+date is:-2011-04-09
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Rajasthan Royals
+id is:-501200
+date is:-2011-04-09
+venue is:-Nehru Stadium
+team 1 is:-Kochi Tuskers Kerala
+team 2 is:-Royal Challengers Bangalore
+id is:-501201
+date is:-2011-04-10
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-501202
+date is:-2011-04-10
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Kings XI Punjab
+team 2 is:-Pune Warriors
+id is:-501203
+date is:-2011-04-11
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Deccan Chargers
+id is:-501204
+date is:-2011-04-12
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-501205
+date is:-2011-04-12
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-501206
+date is:-2011-04-13
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-501207
+date is:-2011-04-13
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Kochi Tuskers Kerala
+team 2 is:-Pune Warriors
+id is:-501208
+date is:-2011-04-14
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-501209
+date is:-2011-04-15
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-501210
+date is:-2011-04-15
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kochi Tuskers Kerala
+id is:-501211
+date is:-2011-04-16
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-501212
+date is:-2011-04-16
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Kings XI Punjab
+id is:-501213
+date is:-2011-04-17
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Pune Warriors
+team 2 is:-Delhi Capitals
+id is:-501214
+date is:-2011-04-17
+venue is:-Eden Gardens
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-501215
+date is:-2011-04-18
+venue is:-Nehru Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Kochi Tuskers Kerala
+id is:-501216
+date is:-2011-04-19
+venue is:-Feroz Shah Kotla
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-501218
+date is:-2011-04-20
+venue is:-Wankhede Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Mumbai Indians
+id is:-501219
+date is:-2011-04-20
+venue is:-Eden Gardens
+team 1 is:-Kochi Tuskers Kerala
+team 2 is:-Kolkata Knight Riders
+id is:-501220
+date is:-2011-04-21
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-501221
+date is:-2011-04-22
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-501222
+date is:-2011-04-22
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-501223
+date is:-2011-04-23
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-501224
+date is:-2011-04-24
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Mumbai Indians
+team 2 is:-Deccan Chargers
+id is:-501225
+date is:-2011-04-24
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Kochi Tuskers Kerala
+team 2 is:-Rajasthan Royals
+id is:-501226
+date is:-2011-04-25
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Pune Warriors
+id is:-501227
+date is:-2011-04-26
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-501228
+date is:-2011-04-27
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Pune Warriors
+team 2 is:-Chennai Super Kings
+id is:-501229
+date is:-2011-04-27
+venue is:-Nehru Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Kochi Tuskers Kerala
+id is:-501230
+date is:-2011-04-28
+venue is:-Feroz Shah Kotla
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-501231
+date is:-2011-04-29
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-501232
+date is:-2011-04-29
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Pune Warriors
+id is:-501233
+date is:-2011-04-30
+venue is:-Nehru Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kochi Tuskers Kerala
+id is:-501234
+date is:-2011-04-30
+venue is:-Eden Gardens
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-501235
+date is:-2011-05-01
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Rajasthan Royals
+id is:-501236
+date is:-2011-05-01
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-501237
+date is:-2011-05-02
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-501238
+date is:-2011-05-02
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kochi Tuskers Kerala
+id is:-501239
+date is:-2011-05-03
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Deccan Chargers
+id is:-501240
+date is:-2011-05-04
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-501241
+date is:-2011-05-04
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Mumbai Indians
+team 2 is:-Pune Warriors
+id is:-501242
+date is:-2011-05-05
+venue is:-Nehru Stadium
+team 1 is:-Kochi Tuskers Kerala
+team 2 is:-Kolkata Knight Riders
+id is:-501243
+date is:-2011-05-05
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-501244
+date is:-2011-05-06
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-501245
+date is:-2011-05-07
+venue is:-Eden Gardens
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-501246
+date is:-2011-05-07
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-501247
+date is:-2011-05-08
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kochi Tuskers Kerala
+team 2 is:-Royal Challengers Bangalore
+id is:-501248
+date is:-2011-05-08
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Pune Warriors
+id is:-501249
+date is:-2011-05-09
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-501250
+date is:-2011-05-10
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Pune Warriors
+id is:-501251
+date is:-2011-05-10
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-501252
+date is:-2011-05-11
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-501253
+date is:-2011-05-12
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-501254
+date is:-2011-05-13
+venue is:-Holkar Cricket Stadium
+team 1 is:-Kochi Tuskers Kerala
+team 2 is:-Kings XI Punjab
+id is:-501255
+date is:-2011-05-14
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-501256
+date is:-2011-05-14
+venue is:-Wankhede Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Mumbai Indians
+id is:-501257
+date is:-2011-05-15
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-501258
+date is:-2011-05-15
+venue is:-Holkar Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kochi Tuskers Kerala
+id is:-501259
+date is:-2011-05-16
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Pune Warriors
+team 2 is:-Deccan Chargers
+id is:-501260
+date is:-2011-05-17
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-501261
+date is:-2011-05-18
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kochi Tuskers Kerala
+id is:-501262
+date is:-2011-05-19
+venue is:-Dr DY Patil Sports Academy
+team 1 is:-Pune Warriors
+team 2 is:-Kolkata Knight Riders
+id is:-501263
+date is:-2011-05-20
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-501264
+date is:-2011-05-21
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Kings XI Punjab
+id is:-501265
+date is:-2011-05-21
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Pune Warriors
+id is:-501266
+date is:-2011-05-22
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-501267
+date is:-2011-05-22
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-501268
+date is:-2011-05-24
+venue is:-Wankhede Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-501269
+date is:-2011-05-25
+venue is:-Wankhede Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-501270
+date is:-2011-05-27
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-501271
+date is:-2011-05-28
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-548306
+date is:-2012-04-04
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-548307
+date is:-2012-04-05
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-548308
+date is:-2012-04-06
+venue is:-Wankhede Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Mumbai Indians
+id is:-548309
+date is:-2012-04-06
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-548310
+date is:-2012-04-07
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-548311
+date is:-2012-04-07
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-548312
+date is:-2012-04-08
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-548313
+date is:-2012-04-08
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Kings XI Punjab
+id is:-548314
+date is:-2012-04-09
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Mumbai Indians
+id is:-548315
+date is:-2012-04-10
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-548316
+date is:-2012-04-10
+venue is:-Feroz Shah Kotla
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-548317
+date is:-2012-04-11
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-548318
+date is:-2012-04-12
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-548319
+date is:-2012-04-12
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Pune Warriors
+team 2 is:-Kings XI Punjab
+id is:-548320
+date is:-2012-04-13
+venue is:-Eden Gardens
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-548321
+date is:-2012-04-19
+venue is:-Feroz Shah Kotla
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-548322
+date is:-2012-04-14
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Pune Warriors
+id is:-548323
+date is:-2012-04-15
+venue is:-Eden Gardens
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-548324
+date is:-2012-04-15
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-548325
+date is:-2012-04-16
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-548326
+date is:-2012-04-17
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Rajasthan Royals
+id is:-548327
+date is:-2012-04-17
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Royal Challengers Bangalore
+id is:-548328
+date is:-2012-04-18
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-548329
+date is:-2012-05-10
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Delhi Capitals
+id is:-548330
+date is:-2012-04-19
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Pune Warriors
+id is:-548331
+date is:-2012-04-20
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-548332
+date is:-2012-04-21
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-548333
+date is:-2012-04-21
+venue is:-Feroz Shah Kotla
+team 1 is:-Pune Warriors
+team 2 is:-Delhi Capitals
+id is:-548334
+date is:-2012-04-22
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-548335
+date is:-2012-04-22
+venue is:-Barabati Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Kolkata Knight Riders
+id is:-548336
+date is:-2012-04-23
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-548337
+date is:-2012-04-24
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Delhi Capitals
+id is:-548339
+date is:-2012-04-25
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-548341
+date is:-2012-04-26
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Pune Warriors
+id is:-548342
+date is:-2012-04-27
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-548343
+date is:-2012-04-28
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-548344
+date is:-2012-04-28
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-548345
+date is:-2012-04-29
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-548346
+date is:-2012-04-29
+venue is:-Wankhede Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Mumbai Indians
+id is:-548347
+date is:-2012-04-30
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-548348
+date is:-2012-05-01
+venue is:-Barabati Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Pune Warriors
+id is:-548349
+date is:-2012-05-01
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-548350
+date is:-2012-05-02
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-548351
+date is:-2012-05-03
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Pune Warriors
+id is:-548352
+date is:-2012-05-04
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Deccan Chargers
+id is:-548353
+date is:-2012-05-05
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Pune Warriors
+id is:-548354
+date is:-2012-05-05
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-548355
+date is:-2012-05-06
+venue is:-Wankhede Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-548356
+date is:-2012-05-06
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-548357
+date is:-2012-05-07
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-548358
+date is:-2012-05-08
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Rajasthan Royals
+id is:-548359
+date is:-2012-05-08
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Kings XI Punjab
+team 2 is:-Deccan Chargers
+id is:-548360
+date is:-2012-05-09
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-548361
+date is:-2012-05-10
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-548362
+date is:-2012-05-11
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Pune Warriors
+id is:-548363
+date is:-2012-05-12
+venue is:-Eden Gardens
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-548364
+date is:-2012-05-12
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-548365
+date is:-2012-05-13
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Pune Warriors
+id is:-548366
+date is:-2012-05-13
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Deccan Chargers
+team 2 is:-Kings XI Punjab
+id is:-548367
+date is:-2012-05-14
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-548368
+date is:-2012-05-14
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-548369
+date is:-2012-05-15
+venue is:-Feroz Shah Kotla
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-548370
+date is:-2012-05-16
+venue is:-Wankhede Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-548371
+date is:-2012-05-17
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-548372
+date is:-2012-05-17
+venue is:-Feroz Shah Kotla
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-548373
+date is:-2012-05-18
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Rajasthan Royals
+team 2 is:-Deccan Chargers
+id is:-548374
+date is:-2012-05-19
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-548375
+date is:-2012-05-19
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Pune Warriors
+id is:-548376
+date is:-2012-05-20
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Deccan Chargers
+team 2 is:-Royal Challengers Bangalore
+id is:-548377
+date is:-2012-05-20
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-548378
+date is:-2012-05-22
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-548379
+date is:-2012-05-23
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-548380
+date is:-2012-05-25
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-548381
+date is:-2012-05-27
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-597998
+date is:-2013-04-03
+venue is:-Eden Gardens
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-597999
+date is:-2013-04-04
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-598000
+date is:-2013-04-05
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Pune Warriors
+id is:-598001
+date is:-2013-04-06
+venue is:-Feroz Shah Kotla
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-598002
+date is:-2013-04-06
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-598003
+date is:-2013-04-07
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Kings XI Punjab
+id is:-598004
+date is:-2013-04-07
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-598005
+date is:-2013-04-08
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-598006
+date is:-2013-04-09
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-598007
+date is:-2013-04-10
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-598008
+date is:-2013-04-11
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-598009
+date is:-2013-04-11
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Pune Warriors
+id is:-598010
+date is:-2013-04-12
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-598011
+date is:-2013-04-13
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Pune Warriors
+id is:-598012
+date is:-2013-04-13
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-598013
+date is:-2013-04-14
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-598014
+date is:-2013-04-14
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-598015
+date is:-2013-04-15
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Pune Warriors
+team 2 is:-Chennai Super Kings
+id is:-598016
+date is:-2013-04-16
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-598017
+date is:-2013-04-16
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-598018
+date is:-2013-04-17
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Pune Warriors
+id is:-598019
+date is:-2013-04-17
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-598020
+date is:-2013-04-18
+venue is:-Feroz Shah Kotla
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-598021
+date is:-2013-04-19
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Kings XI Punjab
+team 2 is:-Sunrisers Hyderabad
+id is:-598022
+date is:-2013-04-20
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-598023
+date is:-2013-04-20
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-598024
+date is:-2013-04-21
+venue is:-Feroz Shah Kotla
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-598025
+date is:-2013-04-21
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Pune Warriors
+team 2 is:-Kings XI Punjab
+id is:-598026
+date is:-2013-04-22
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-598027
+date is:-2013-04-23
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Pune Warriors
+id is:-598028
+date is:-2013-05-16
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-598029
+date is:-2013-04-24
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-598030
+date is:-2013-04-25
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-598031
+date is:-2013-04-26
+venue is:-Eden Gardens
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-598032
+date is:-2013-04-27
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-598033
+date is:-2013-04-27
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-598034
+date is:-2013-04-28
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-598035
+date is:-2013-04-28
+venue is:-Shaheed Veer Narayan Singh International Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Pune Warriors
+id is:-598036
+date is:-2013-04-29
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-598037
+date is:-2013-04-29
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-598038
+date is:-2013-04-30
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Pune Warriors
+id is:-598039
+date is:-2013-05-01
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-598040
+date is:-2013-05-01
+venue is:-Shaheed Veer Narayan Singh International Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-598041
+date is:-2013-05-02
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-598042
+date is:-2013-05-02
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Pune Warriors
+id is:-598043
+date is:-2013-05-03
+venue is:-Eden Gardens
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-598044
+date is:-2013-05-04
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-598045
+date is:-2013-05-14
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-598046
+date is:-2013-05-05
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-598047
+date is:-2013-05-05
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Rajasthan Royals
+id is:-598048
+date is:-2013-04-09
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-598049
+date is:-2013-05-07
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-598050
+date is:-2013-05-07
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-598051
+date is:-2013-05-08
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-598052
+date is:-2013-05-09
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-598053
+date is:-2013-05-09
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Pune Warriors
+id is:-598054
+date is:-2013-05-10
+venue is:-Feroz Shah Kotla
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-598055
+date is:-2013-05-11
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Mumbai Indians
+id is:-598056
+date is:-2013-05-11
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-598057
+date is:-2013-05-12
+venue is:-JSCA International Stadium Complex
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-598058
+date is:-2013-05-12
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-598059
+date is:-2013-04-23
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-598060
+date is:-2013-05-13
+venue is:-Wankhede Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-598061
+date is:-2013-05-15
+venue is:-JSCA International Stadium Complex
+team 1 is:-Pune Warriors
+team 2 is:-Kolkata Knight Riders
+id is:-598062
+date is:-2013-05-14
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-598063
+date is:-2013-05-15
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-598064
+date is:-2013-05-06
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-598065
+date is:-2013-05-17
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-598066
+date is:-2013-05-18
+venue is:-Himachal Pradesh Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-598067
+date is:-2013-05-19
+venue is:-Subrata Roy Sahara Stadium
+team 1 is:-Pune Warriors
+team 2 is:-Delhi Capitals
+id is:-598068
+date is:-2013-05-18
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-598069
+date is:-2013-05-19
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-598070
+date is:-2013-05-21
+venue is:-Feroz Shah Kotla
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-598071
+date is:-2013-05-22
+venue is:-Feroz Shah Kotla
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-598072
+date is:-2013-05-24
+venue is:-Eden Gardens
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-598073
+date is:-2013-05-26
+venue is:-Eden Gardens
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-729279
+date is:-2014-04-16
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-729281
+date is:-2014-04-17
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-729283
+date is:-2014-04-18
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-729285
+date is:-2014-04-18
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-729287
+date is:-2014-04-19
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-729289
+date is:-2014-04-19
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-729291
+date is:-2014-04-20
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-729293
+date is:-2014-04-21
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-729295
+date is:-2014-04-22
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Sunrisers Hyderabad
+id is:-729297
+date is:-2014-04-23
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-729299
+date is:-2014-04-24
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-729301
+date is:-2014-04-25
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-729303
+date is:-2014-04-25
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-729305
+date is:-2014-04-26
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-729307
+date is:-2014-04-26
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-729309
+date is:-2014-04-27
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-729311
+date is:-2014-04-27
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-729313
+date is:-2014-04-28
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-729315
+date is:-2014-04-29
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-729317
+date is:-2014-04-30
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-733971
+date is:-2014-05-02
+venue is:-JSCA International Stadium Complex
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-733973
+date is:-2014-05-03
+venue is:-Wankhede Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-733975
+date is:-2014-05-03
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-733977
+date is:-2014-05-04
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-733979
+date is:-2014-05-05
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-733981
+date is:-2014-05-05
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-733983
+date is:-2014-05-06
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-733985
+date is:-2014-05-07
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-733987
+date is:-2014-05-07
+venue is:-Barabati Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-733989
+date is:-2014-05-08
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-733991
+date is:-2014-05-09
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-733993
+date is:-2014-05-10
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-733995
+date is:-2014-05-10
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-733997
+date is:-2014-05-11
+venue is:-Barabati Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-733999
+date is:-2014-05-11
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-734001
+date is:-2014-05-12
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-734003
+date is:-2014-05-13
+venue is:-JSCA International Stadium Complex
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-734005
+date is:-2014-05-13
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-734007
+date is:-2014-05-14
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-734009
+date is:-2014-05-14
+venue is:-Barabati Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-734011
+date is:-2014-05-15
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-734013
+date is:-2014-05-18
+venue is:-JSCA International Stadium Complex
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-734015
+date is:-2014-05-18
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-734017
+date is:-2014-05-19
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-734019
+date is:-2014-05-19
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-734021
+date is:-2014-05-20
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-734023
+date is:-2014-05-20
+venue is:-Eden Gardens
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-734025
+date is:-2014-05-21
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-734027
+date is:-2014-05-22
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-734029
+date is:-2014-05-22
+venue is:-JSCA International Stadium Complex
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-734031
+date is:-2014-05-23
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-734033
+date is:-2014-05-23
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-734035
+date is:-2014-05-24
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-734037
+date is:-2014-05-24
+venue is:-Eden Gardens
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-734039
+date is:-2014-05-25
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-734041
+date is:-2014-05-25
+venue is:-Wankhede Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-734043
+date is:-2014-05-27
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-734045
+date is:-2014-05-28
+venue is:-Brabourne Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-734047
+date is:-2014-05-30
+venue is:-Wankhede Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-734049
+date is:-2014-06-01
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-829705
+date is:-2015-04-08
+venue is:-Eden Gardens
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-829707
+date is:-2015-04-09
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-829709
+date is:-2015-04-10
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-829711
+date is:-2015-04-11
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-829713
+date is:-2015-04-11
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-829715
+date is:-2015-04-12
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-829717
+date is:-2015-04-12
+venue is:-Wankhede Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-829719
+date is:-2015-04-13
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-829721
+date is:-2015-04-14
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-829723
+date is:-2015-04-30
+venue is:-Eden Gardens
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-829725
+date is:-2015-04-15
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-829727
+date is:-2015-04-16
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-829729
+date is:-2015-04-17
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-829731
+date is:-2015-04-18
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-829733
+date is:-2015-04-18
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-829735
+date is:-2015-04-19
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-829737
+date is:-2015-04-19
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-829739
+date is:-2015-04-20
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-829741
+date is:-2015-04-21
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-829743
+date is:-2015-04-22
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-829745
+date is:-2015-04-22
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-829747
+date is:-2015-04-23
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-829749
+date is:-2015-04-24
+venue is:-Sardar Patel Stadium, Motera
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-829751
+date is:-2015-04-25
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-829753
+date is:-2015-04-25
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-829757
+date is:-2015-04-26
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-829759
+date is:-2015-04-27
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-829761
+date is:-2015-05-07
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-829763
+date is:-2015-04-29
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-829765
+date is:-2015-04-28
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-829767
+date is:-2015-05-01
+venue is:-Feroz Shah Kotla
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-829769
+date is:-2015-05-01
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-829771
+date is:-2015-05-02
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-829773
+date is:-2015-05-02
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-829775
+date is:-2015-05-03
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-829777
+date is:-2015-05-03
+venue is:-Brabourne Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-829779
+date is:-2015-05-04
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-829781
+date is:-2015-05-04
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-829783
+date is:-2015-05-05
+venue is:-Wankhede Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-829785
+date is:-2015-05-06
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-829787
+date is:-2015-05-07
+venue is:-Brabourne Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-829789
+date is:-2015-05-08
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-829791
+date is:-2015-05-09
+venue is:-Eden Gardens
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-829793
+date is:-2015-05-09
+venue is:-Shaheed Veer Narayan Singh International Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-829795
+date is:-2015-05-10
+venue is:-Wankhede Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-829797
+date is:-2015-05-10
+venue is:-MA Chidambaram Stadium, Chepauk
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-829799
+date is:-2015-05-11
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-829801
+date is:-2015-05-12
+venue is:-Shaheed Veer Narayan Singh International Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-829803
+date is:-2015-05-13
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-829805
+date is:-2015-05-14
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-829807
+date is:-2015-05-15
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-829809
+date is:-2015-05-16
+venue is:-Punjab Cricket Association Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-829811
+date is:-2015-05-16
+venue is:-Brabourne Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-829813
+date is:-2015-05-17
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-829815
+date is:-2015-05-17
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-829817
+date is:-2015-05-19
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-829819
+date is:-2015-05-20
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-829821
+date is:-2015-05-22
+venue is:-JSCA International Stadium Complex
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-829823
+date is:-2015-05-24
+venue is:-Eden Gardens
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-980901
+date is:-2016-04-09
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rising Pune Supergiants
+id is:-980903
+date is:-2016-04-10
+venue is:-Eden Gardens
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-980905
+date is:-2016-04-11
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Gujarat Lions
+id is:-980907
+date is:-2016-04-12
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-980909
+date is:-2016-04-13
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-980911
+date is:-2016-04-14
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Rising Pune Supergiants
+team 2 is:-Gujarat Lions
+id is:-980913
+date is:-2016-04-15
+venue is:-Feroz Shah Kotla
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-980915
+date is:-2016-04-16
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-980917
+date is:-2016-04-16
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Gujarat Lions
+id is:-980919
+date is:-2016-04-17
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Rising Pune Supergiants
+team 2 is:-Kings XI Punjab
+id is:-980921
+date is:-2016-04-17
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-980923
+date is:-2016-04-18
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-980925
+date is:-2016-04-19
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-980927
+date is:-2016-04-20
+venue is:-Wankhede Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-980929
+date is:-2016-04-21
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Gujarat Lions
+team 2 is:-Sunrisers Hyderabad
+id is:-980931
+date is:-2016-04-22
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rising Pune Supergiants
+id is:-980933
+date is:-2016-04-23
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-980935
+date is:-2016-04-23
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Kings XI Punjab
+team 2 is:-Sunrisers Hyderabad
+id is:-980937
+date is:-2016-04-24
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Gujarat Lions
+id is:-980939
+date is:-2016-04-24
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Rising Pune Supergiants
+team 2 is:-Kolkata Knight Riders
+id is:-980941
+date is:-2016-04-25
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-980943
+date is:-2016-04-26
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rising Pune Supergiants
+id is:-980945
+date is:-2016-04-27
+venue is:-Feroz Shah Kotla
+team 1 is:-Gujarat Lions
+team 2 is:-Delhi Capitals
+id is:-980947
+date is:-2016-04-28
+venue is:-Wankhede Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-980949
+date is:-2016-04-29
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Rising Pune Supergiants
+team 2 is:-Gujarat Lions
+id is:-980951
+date is:-2016-04-30
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-980953
+date is:-2016-04-30
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-980955
+date is:-2016-05-01
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Gujarat Lions
+id is:-980957
+date is:-2016-05-01
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Rising Pune Supergiants
+team 2 is:-Mumbai Indians
+id is:-980959
+date is:-2016-05-02
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-980961
+date is:-2016-05-03
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Gujarat Lions
+team 2 is:-Delhi Capitals
+id is:-980963
+date is:-2016-05-04
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-980965
+date is:-2016-05-05
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Rising Pune Supergiants
+id is:-980967
+date is:-2016-05-06
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Gujarat Lions
+team 2 is:-Sunrisers Hyderabad
+id is:-980969
+date is:-2016-05-07
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Rising Pune Supergiants
+team 2 is:-Royal Challengers Bangalore
+id is:-980971
+date is:-2016-05-07
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-980973
+date is:-2016-05-08
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-980975
+date is:-2016-05-08
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Gujarat Lions
+id is:-980977
+date is:-2016-05-09
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-980979
+date is:-2016-05-10
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rising Pune Supergiants
+id is:-980981
+date is:-2016-05-11
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-980983
+date is:-2016-05-12
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-980985
+date is:-2016-05-13
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-980987
+date is:-2016-05-14
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Gujarat Lions
+id is:-980989
+date is:-2016-05-14
+venue is:-Eden Gardens
+team 1 is:-Rising Pune Supergiants
+team 2 is:-Kolkata Knight Riders
+id is:-980991
+date is:-2016-05-15
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Sunrisers Hyderabad
+id is:-980993
+date is:-2016-05-15
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-980995
+date is:-2016-05-16
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-980997
+date is:-2016-05-17
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rising Pune Supergiants
+id is:-980999
+date is:-2016-05-18
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-981001
+date is:-2016-05-19
+venue is:-Green Park
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Gujarat Lions
+id is:-981003
+date is:-2016-05-20
+venue is:-Shaheed Veer Narayan Singh International Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-981005
+date is:-2016-05-21
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rising Pune Supergiants
+id is:-981007
+date is:-2016-05-21
+venue is:-Green Park
+team 1 is:-Mumbai Indians
+team 2 is:-Gujarat Lions
+id is:-981009
+date is:-2016-05-22
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-981011
+date is:-2016-05-22
+venue is:-Shaheed Veer Narayan Singh International Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-981013
+date is:-2016-05-24
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Gujarat Lions
+team 2 is:-Royal Challengers Bangalore
+id is:-981015
+date is:-2016-05-25
+venue is:-Feroz Shah Kotla
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-981017
+date is:-2016-05-27
+venue is:-Feroz Shah Kotla
+team 1 is:-Gujarat Lions
+team 2 is:-Sunrisers Hyderabad
+id is:-981019
+date is:-2016-05-29
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-1082591
+date is:-2017-04-05
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-1082592
+date is:-2017-04-06
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rising Pune Supergiant
+id is:-1082593
+date is:-2017-04-07
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Gujarat Lions
+team 2 is:-Kolkata Knight Riders
+id is:-1082594
+date is:-2017-04-08
+venue is:-Holkar Cricket Stadium
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Kings XI Punjab
+id is:-1082595
+date is:-2017-04-08
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1082596
+date is:-2017-04-09
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Gujarat Lions
+team 2 is:-Sunrisers Hyderabad
+id is:-1082597
+date is:-2017-04-09
+venue is:-Wankhede Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1082598
+date is:-2017-04-10
+venue is:-Holkar Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-1082599
+date is:-2017-04-11
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rising Pune Supergiant
+id is:-1082600
+date is:-2017-04-12
+venue is:-Wankhede Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-1082601
+date is:-2017-04-13
+venue is:-Eden Gardens
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-1082602
+date is:-2017-04-14
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1082603
+date is:-2017-04-14
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Gujarat Lions
+id is:-1082604
+date is:-2017-04-15
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1082605
+date is:-2017-04-15
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-1082606
+date is:-2017-04-16
+venue is:-Wankhede Stadium
+team 1 is:-Gujarat Lions
+team 2 is:-Mumbai Indians
+id is:-1082607
+date is:-2017-04-16
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Royal Challengers Bangalore
+id is:-1082608
+date is:-2017-04-17
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1082609
+date is:-2017-04-17
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-1082610
+date is:-2017-04-18
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Gujarat Lions
+id is:-1082611
+date is:-2017-04-19
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1082612
+date is:-2017-04-20
+venue is:-Holkar Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-1082613
+date is:-2017-04-21
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Gujarat Lions
+id is:-1082614
+date is:-2017-04-22
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1082615
+date is:-2017-04-22
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rising Pune Supergiant
+id is:-1082616
+date is:-2017-04-23
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Gujarat Lions
+id is:-1082617
+date is:-2017-04-23
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-1082618
+date is:-2017-04-24
+venue is:-Wankhede Stadium
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Mumbai Indians
+id is:-1082620
+date is:-2017-04-26
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Kolkata Knight Riders
+id is:-1082621
+date is:-2017-04-27
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Gujarat Lions
+id is:-1082622
+date is:-2017-04-28
+venue is:-Eden Gardens
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1082623
+date is:-2017-04-28
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-1082624
+date is:-2017-04-29
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Royal Challengers Bangalore
+id is:-1082625
+date is:-2017-04-29
+venue is:-Saurashtra Cricket Association Stadium
+team 1 is:-Gujarat Lions
+team 2 is:-Mumbai Indians
+id is:-1082626
+date is:-2017-04-30
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-1082627
+date is:-2017-04-30
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1082628
+date is:-2017-05-01
+venue is:-Wankhede Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1082629
+date is:-2017-05-01
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Gujarat Lions
+team 2 is:-Rising Pune Supergiant
+id is:-1082630
+date is:-2017-05-02
+venue is:-Feroz Shah Kotla
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1082631
+date is:-2017-05-03
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rising Pune Supergiant
+id is:-1082632
+date is:-2017-05-04
+venue is:-Feroz Shah Kotla
+team 1 is:-Gujarat Lions
+team 2 is:-Delhi Capitals
+id is:-1082633
+date is:-2017-05-05
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-1082634
+date is:-2017-05-06
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Sunrisers Hyderabad
+id is:-1082635
+date is:-2017-05-06
+venue is:-Feroz Shah Kotla
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1082636
+date is:-2017-05-07
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1082637
+date is:-2017-05-07
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Gujarat Lions
+id is:-1082638
+date is:-2017-05-08
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1082639
+date is:-2017-05-09
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-1082640
+date is:-2017-05-10
+venue is:-Green Park
+team 1 is:-Gujarat Lions
+team 2 is:-Delhi Capitals
+id is:-1082641
+date is:-2017-05-11
+venue is:-Wankhede Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-1082642
+date is:-2017-05-12
+venue is:-Feroz Shah Kotla
+team 1 is:-Delhi Capitals
+team 2 is:-Rising Pune Supergiant
+id is:-1082643
+date is:-2017-05-13
+venue is:-Green Park
+team 1 is:-Gujarat Lions
+team 2 is:-Sunrisers Hyderabad
+id is:-1082644
+date is:-2017-05-13
+venue is:-Eden Gardens
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-1082645
+date is:-2017-05-14
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rising Pune Supergiant
+id is:-1082646
+date is:-2017-05-14
+venue is:-Feroz Shah Kotla
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1082647
+date is:-2017-05-16
+venue is:-Wankhede Stadium
+team 1 is:-Rising Pune Supergiant
+team 2 is:-Mumbai Indians
+id is:-1082648
+date is:-2017-05-17
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1082649
+date is:-2017-05-19
+venue is:-M Chinnaswamy Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1082650
+date is:-2017-05-21
+venue is:-Rajiv Gandhi International Stadium, Uppal
+team 1 is:-Mumbai Indians
+team 2 is:-Rising Pune Supergiant
+id is:-1136561
+date is:-2018-04-07
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1136562
+date is:-2018-04-08
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-1136563
+date is:-2018-04-08
+venue is:-Eden Gardens
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1136564
+date is:-2018-04-09
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1136565
+date is:-2018-04-10
+venue is:-MA Chidambaram Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-1136566
+date is:-2018-04-11
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-1136567
+date is:-2018-04-12
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1136568
+date is:-2018-04-13
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-1136569
+date is:-2018-04-14
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1136570
+date is:-2018-04-14
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1136571
+date is:-2018-04-15
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1136572
+date is:-2018-04-15
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-1136573
+date is:-2018-04-16
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1136574
+date is:-2018-04-17
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-1136575
+date is:-2018-04-18
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-1136576
+date is:-2018-04-19
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Sunrisers Hyderabad
+id is:-1136577
+date is:-2018-04-20
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-1136578
+date is:-2018-04-21
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-1136579
+date is:-2018-04-21
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-1136580
+date is:-2018-04-22
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1136581
+date is:-2018-04-22
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1136582
+date is:-2018-04-23
+venue is:-Arun Jaitley Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-1136583
+date is:-2018-04-24
+venue is:-Wankhede Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-1136584
+date is:-2018-04-25
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1136585
+date is:-2018-04-26
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-1136586
+date is:-2018-04-27
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1136587
+date is:-2018-04-28
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-1136588
+date is:-2018-04-29
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-1136589
+date is:-2018-04-29
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1136590
+date is:-2018-04-30
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1136591
+date is:-2018-05-01
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1136592
+date is:-2018-05-02
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-1136593
+date is:-2018-05-03
+venue is:-Eden Gardens
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1136594
+date is:-2018-05-04
+venue is:-Holkar Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-1136595
+date is:-2018-05-05
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1136596
+date is:-2018-05-05
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1136597
+date is:-2018-05-06
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-1136598
+date is:-2018-05-06
+venue is:-Holkar Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-1136599
+date is:-2018-05-07
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-1136600
+date is:-2018-05-08
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kings XI Punjab
+id is:-1136601
+date is:-2018-05-09
+venue is:-Eden Gardens
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-1136602
+date is:-2018-05-10
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1136603
+date is:-2018-05-11
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-1136604
+date is:-2018-05-12
+venue is:-Holkar Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-1136605
+date is:-2018-05-12
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-1136606
+date is:-2018-05-13
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1136607
+date is:-2018-05-13
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1136608
+date is:-2018-05-14
+venue is:-Holkar Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-1136609
+date is:-2018-05-15
+venue is:-Eden Gardens
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-1136610
+date is:-2018-05-16
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-1136611
+date is:-2018-05-17
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-1136612
+date is:-2018-05-18
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-1136613
+date is:-2018-05-19
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1136614
+date is:-2018-05-19
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1136615
+date is:-2018-05-20
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1136616
+date is:-2018-05-20
+venue is:-Maharashtra Cricket Association Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-1136617
+date is:-2018-05-22
+venue is:-Wankhede Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1136618
+date is:-2018-05-23
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1136619
+date is:-2018-05-25
+venue is:-Eden Gardens
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1136620
+date is:-2018-05-27
+venue is:-Wankhede Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1175356
+date is:-2019-03-23
+venue is:-MA Chidambaram Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1175357
+date is:-2019-03-24
+venue is:-Eden Gardens
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1175358
+date is:-2019-03-24
+venue is:-Wankhede Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1175359
+date is:-2019-03-25
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-1175360
+date is:-2019-03-26
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-1175361
+date is:-2019-03-27
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-1175362
+date is:-2019-03-28
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-1175363
+date is:-2019-03-29
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1175364
+date is:-2019-03-30
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-1175365
+date is:-2019-03-30
+venue is:-Arun Jaitley Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1175366
+date is:-2019-03-31
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-1175367
+date is:-2019-03-31
+venue is:-MA Chidambaram Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-1175368
+date is:-2019-04-01
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-1175369
+date is:-2019-04-02
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-1175370
+date is:-2019-04-03
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1175371
+date is:-2019-04-04
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1175372
+date is:-2019-04-05
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1178393
+date is:-2019-04-06
+venue is:-MA Chidambaram Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-1178394
+date is:-2019-04-06
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1178395
+date is:-2019-04-07
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1178396
+date is:-2019-04-07
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-1178397
+date is:-2019-04-08
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-1178398
+date is:-2019-04-09
+venue is:-MA Chidambaram Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-1178399
+date is:-2019-04-10
+venue is:-Wankhede Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Mumbai Indians
+id is:-1178400
+date is:-2019-04-11
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-1178401
+date is:-2019-04-12
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1178402
+date is:-2019-04-13
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1178403
+date is:-2019-04-13
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-1178404
+date is:-2019-04-14
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-1178405
+date is:-2019-04-14
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1178406
+date is:-2019-04-15
+venue is:-Wankhede Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1178407
+date is:-2019-04-16
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-1178408
+date is:-2019-04-17
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1178409
+date is:-2019-04-18
+venue is:-Arun Jaitley Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1178410
+date is:-2019-04-19
+venue is:-Eden Gardens
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1178411
+date is:-2019-04-20
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1178412
+date is:-2019-04-20
+venue is:-Arun Jaitley Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Delhi Capitals
+id is:-1178413
+date is:-2019-04-21
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1178414
+date is:-2019-04-21
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1178415
+date is:-2019-04-22
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-1178416
+date is:-2019-04-23
+venue is:-MA Chidambaram Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1178417
+date is:-2019-04-24
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-1178418
+date is:-2019-04-25
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1178419
+date is:-2019-04-26
+venue is:-MA Chidambaram Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1178420
+date is:-2019-04-27
+venue is:-Sawai Mansingh Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-1178421
+date is:-2019-04-28
+venue is:-Arun Jaitley Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-1178422
+date is:-2019-04-28
+venue is:-Eden Gardens
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1178423
+date is:-2019-04-29
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-1178424
+date is:-2019-04-30
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-1178425
+date is:-2019-05-01
+venue is:-MA Chidambaram Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1178426
+date is:-2019-05-02
+venue is:-Wankhede Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1178427
+date is:-2019-05-03
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Kolkata Knight Riders
+id is:-1178428
+date is:-2019-05-04
+venue is:-Arun Jaitley Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-1178429
+date is:-2019-05-04
+venue is:-M.Chinnaswamy Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-1178430
+date is:-2019-05-05
+venue is:-Punjab Cricket Association IS Bindra Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Kings XI Punjab
+id is:-1178431
+date is:-2019-05-05
+venue is:-Wankhede Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1181764
+date is:-2019-05-07
+venue is:-MA Chidambaram Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-1181766
+date is:-2019-05-08
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1181767
+date is:-2019-05-10
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-1181768
+date is:-2019-05-12
+venue is:-Rajiv Gandhi International Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1216492
+date is:-2020-09-19
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1216493
+date is:-2020-09-20
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-1216494
+date is:-2020-10-21
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-1216495
+date is:-2020-11-03
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1216496
+date is:-2020-09-22
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-1216497
+date is:-2020-10-24
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1216498
+date is:-2020-10-24
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Sunrisers Hyderabad
+id is:-1216499
+date is:-2020-10-28
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1216500
+date is:-2020-10-09
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-1216501
+date is:-2020-10-07
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-1216502
+date is:-2020-10-31
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-1216503
+date is:-2020-10-01
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-1216504
+date is:-2020-09-30
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1216505
+date is:-2020-11-02
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1216506
+date is:-2020-11-01
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-1216507
+date is:-2020-10-11
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-1216508
+date is:-2020-09-23
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-1216509
+date is:-2020-10-17
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1216510
+date is:-2020-09-24
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Royal Challengers Bangalore
+id is:-1216511
+date is:-2020-10-06
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1216512
+date is:-2020-10-18
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1216513
+date is:-2020-10-04
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Chennai Super Kings
+id is:-1216514
+date is:-2020-10-03
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1216515
+date is:-2020-10-03
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1216516
+date is:-2020-10-02
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1216517
+date is:-2020-10-18
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Kings XI Punjab
+id is:-1216518
+date is:-2020-10-22
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1216519
+date is:-2020-10-05
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-1216520
+date is:-2020-10-26
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-1216521
+date is:-2020-10-23
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-1216522
+date is:-2020-10-17
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1216523
+date is:-2020-10-10
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Kings XI Punjab
+id is:-1216524
+date is:-2020-10-27
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1216525
+date is:-2020-10-10
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1216526
+date is:-2020-10-16
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1216527
+date is:-2020-09-27
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-1216528
+date is:-2020-10-13
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1216529
+date is:-2020-10-11
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1216530
+date is:-2020-11-01
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1216531
+date is:-2020-10-15
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kings XI Punjab
+id is:-1216532
+date is:-2020-09-29
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1216533
+date is:-2020-10-19
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-1216534
+date is:-2020-09-21
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-1216535
+date is:-2020-10-31
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1216536
+date is:-2020-10-29
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-1216537
+date is:-2020-10-30
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Kings XI Punjab
+team 2 is:-Rajasthan Royals
+id is:-1216538
+date is:-2020-10-04
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1216539
+date is:-2020-09-25
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-1216540
+date is:-2020-10-12
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1216541
+date is:-2020-10-25
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1216542
+date is:-2020-10-08
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kings XI Punjab
+id is:-1216543
+date is:-2020-10-14
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-1216544
+date is:-2020-10-25
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1216545
+date is:-2020-09-26
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1216546
+date is:-2020-10-20
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kings XI Punjab
+id is:-1216547
+date is:-2020-09-28
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1237177
+date is:-2020-11-05
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1237178
+date is:-2020-11-06
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-1237180
+date is:-2020-11-08
+venue is:-Sheikh Zayed Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1237181
+date is:-2020-11-10
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1254058
+date is:-2021-04-09
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-1254059
+date is:-2021-04-10
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1254060
+date is:-2021-04-11
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1254061
+date is:-2021-04-12
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Rajasthan Royals
+id is:-1254062
+date is:-2021-04-13
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-1254063
+date is:-2021-04-14
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-1254064
+date is:-2021-04-15
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-1254065
+date is:-2021-04-16
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Chennai Super Kings
+id is:-1254066
+date is:-2021-04-17
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1254067
+date is:-2021-04-18
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1254068
+date is:-2021-04-18
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Delhi Capitals
+id is:-1254069
+date is:-2021-04-19
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-1254070
+date is:-2021-04-20
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1254071
+date is:-2021-04-21
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Punjab Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1254072
+date is:-2021-04-21
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1254073
+date is:-2021-04-22
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1254074
+date is:-2021-04-23
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Mumbai Indians
+team 2 is:-Punjab Kings
+id is:-1254075
+date is:-2021-04-24
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1254076
+date is:-2021-04-25
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-1254077
+date is:-2021-04-25
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1254078
+date is:-2021-04-26
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Punjab Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1254079
+date is:-2021-04-27
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1254080
+date is:-2021-04-28
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1254081
+date is:-2021-04-29
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-1254082
+date is:-2021-04-29
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1254083
+date is:-2021-04-30
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Punjab Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-1254084
+date is:-2021-05-01
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-1254085
+date is:-2021-05-02
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1254086
+date is:-2021-05-02
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Punjab Kings
+team 2 is:-Delhi Capitals
+id is:-1254087
+date is:-2021-09-20
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1254088
+date is:-2021-10-08
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1254089
+date is:-2021-10-02
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-1254090
+date is:-2021-10-03
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Punjab Kings
+id is:-1254091
+date is:-2021-09-30
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1254092
+date is:-2021-09-28
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1254093
+date is:-2021-10-05
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-1254094
+date is:-2021-10-07
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Punjab Kings
+id is:-1254095
+date is:-2021-10-06
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-1254096
+date is:-2021-09-23
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-1254097
+date is:-2021-09-25
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-1254098
+date is:-2021-09-26
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-1254099
+date is:-2021-09-28
+venue is:-Zayed Cricket Stadium, Abu Dhabi
+team 1 is:-Punjab Kings
+team 2 is:-Mumbai Indians
+id is:-1254100
+date is:-2021-09-27
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1254101
+date is:-2021-10-08
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Royal Challengers Bangalore
+id is:-1254102
+date is:-2021-10-01
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Punjab Kings
+id is:-1254103
+date is:-2021-09-29
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1254104
+date is:-2021-09-19
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-1254105
+date is:-2021-09-22
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1254106
+date is:-2021-10-07
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1254107
+date is:-2021-09-25
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Punjab Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1254108
+date is:-2021-09-26
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1254109
+date is:-2021-10-03
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1254110
+date is:-2021-10-04
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1254111
+date is:-2021-09-21
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Rajasthan Royals
+team 2 is:-Punjab Kings
+id is:-1254112
+date is:-2021-10-02
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1254113
+date is:-2021-09-24
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1254114
+date is:-2021-10-10
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-1254115
+date is:-2021-10-11
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Kolkata Knight Riders
+id is:-1254116
+date is:-2021-10-13
+venue is:-Sharjah Cricket Stadium
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1254117
+date is:-2021-10-15
+venue is:-Dubai International Cricket Stadium
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1304047
+date is:-2022-03-26
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1304048
+date is:-2022-03-27
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1304049
+date is:-2022-03-27
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Punjab Kings
+id is:-1304050
+date is:-2022-03-28
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Lucknow Super Giants
+team 2 is:-Gujarat Titans
+id is:-1304051
+date is:-2022-03-29
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1304052
+date is:-2022-03-30
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-1304053
+date is:-2022-03-31
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Lucknow Super Giants
+id is:-1304054
+date is:-2022-04-01
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1304055
+date is:-2022-04-02
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-1304056
+date is:-2022-04-02
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Gujarat Titans
+team 2 is:-Delhi Capitals
+id is:-1304057
+date is:-2022-04-03
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Chennai Super Kings
+id is:-1304058
+date is:-2022-04-04
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Lucknow Super Giants
+team 2 is:-Sunrisers Hyderabad
+id is:-1304059
+date is:-2022-04-05
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1304060
+date is:-2022-04-06
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Mumbai Indians
+team 2 is:-Kolkata Knight Riders
+id is:-1304061
+date is:-2022-04-07
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Delhi Capitals
+team 2 is:-Lucknow Super Giants
+id is:-1304062
+date is:-2022-04-08
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Gujarat Titans
+id is:-1304063
+date is:-2022-04-09
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1304064
+date is:-2022-04-09
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-1304065
+date is:-2022-04-10
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1304066
+date is:-2022-04-10
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Lucknow Super Giants
+id is:-1304067
+date is:-2022-04-11
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Gujarat Titans
+team 2 is:-Sunrisers Hyderabad
+id is:-1304068
+date is:-2022-04-12
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-1304069
+date is:-2022-04-13
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Punjab Kings
+team 2 is:-Mumbai Indians
+id is:-1304070
+date is:-2022-04-14
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Gujarat Titans
+team 2 is:-Rajasthan Royals
+id is:-1304071
+date is:-2022-04-15
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1304072
+date is:-2022-04-16
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Lucknow Super Giants
+team 2 is:-Mumbai Indians
+id is:-1304073
+date is:-2022-04-16
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1304074
+date is:-2022-04-17
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1304075
+date is:-2022-04-17
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Chennai Super Kings
+team 2 is:-Gujarat Titans
+id is:-1304076
+date is:-2022-04-18
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-1304077
+date is:-2022-04-19
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Lucknow Super Giants
+id is:-1304078
+date is:-2022-04-20
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Delhi Capitals
+id is:-1304079
+date is:-2022-04-21
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1304080
+date is:-2022-04-22
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-1304081
+date is:-2022-04-23
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Gujarat Titans
+team 2 is:-Kolkata Knight Riders
+id is:-1304082
+date is:-2022-04-23
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-1304083
+date is:-2022-04-24
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Lucknow Super Giants
+team 2 is:-Mumbai Indians
+id is:-1304084
+date is:-2022-04-25
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Chennai Super Kings
+id is:-1304085
+date is:-2022-04-26
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Rajasthan Royals
+team 2 is:-Royal Challengers Bangalore
+id is:-1304086
+date is:-2022-04-27
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Gujarat Titans
+id is:-1304087
+date is:-2022-04-28
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1304088
+date is:-2022-04-29
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Lucknow Super Giants
+team 2 is:-Punjab Kings
+id is:-1304089
+date is:-2022-04-30
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Gujarat Titans
+id is:-1304090
+date is:-2022-04-30
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-1304091
+date is:-2022-05-01
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Lucknow Super Giants
+team 2 is:-Delhi Capitals
+id is:-1304092
+date is:-2022-05-01
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1304093
+date is:-2022-05-02
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Kolkata Knight Riders
+id is:-1304094
+date is:-2022-05-03
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Gujarat Titans
+team 2 is:-Punjab Kings
+id is:-1304095
+date is:-2022-05-04
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Chennai Super Kings
+id is:-1304096
+date is:-2022-05-05
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1304097
+date is:-2022-05-06
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Mumbai Indians
+team 2 is:-Gujarat Titans
+id is:-1304098
+date is:-2022-05-07
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Rajasthan Royals
+id is:-1304099
+date is:-2022-05-07
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Lucknow Super Giants
+team 2 is:-Kolkata Knight Riders
+id is:-1304100
+date is:-2022-05-08
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Sunrisers Hyderabad
+id is:-1304101
+date is:-2022-05-08
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1304102
+date is:-2022-05-09
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1304103
+date is:-2022-05-10
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Gujarat Titans
+team 2 is:-Lucknow Super Giants
+id is:-1304104
+date is:-2022-05-11
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-1304105
+date is:-2022-05-12
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-1304106
+date is:-2022-05-13
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-1304107
+date is:-2022-05-14
+venue is:-Maharashtra Cricket Association Stadium, Pune
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1304108
+date is:-2022-05-15
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Gujarat Titans
+id is:-1304109
+date is:-2022-05-15
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Lucknow Super Giants
+id is:-1304110
+date is:-2022-05-16
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Delhi Capitals
+team 2 is:-Punjab Kings
+id is:-1304111
+date is:-2022-05-17
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-1304112
+date is:-2022-05-18
+venue is:-Dr DY Patil Sports Academy, Mumbai
+team 1 is:-Lucknow Super Giants
+team 2 is:-Kolkata Knight Riders
+id is:-1304113
+date is:-2022-05-19
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Gujarat Titans
+team 2 is:-Royal Challengers Bangalore
+id is:-1304114
+date is:-2022-05-20
+venue is:-Brabourne Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Rajasthan Royals
+id is:-1304115
+date is:-2022-05-21
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1304116
+date is:-2022-05-22
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Punjab Kings
+id is:-1312197
+date is:-2022-05-24
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Rajasthan Royals
+team 2 is:-Gujarat Titans
+id is:-1312198
+date is:-2022-05-25
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Lucknow Super Giants
+id is:-1312199
+date is:-2022-05-27
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-1312200
+date is:-2022-05-29
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Rajasthan Royals
+team 2 is:-Gujarat Titans
+id is:-1359475
+date is:-2023-03-31
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Chennai Super Kings
+team 2 is:-Gujarat Titans
+id is:-1359476
+date is:-2023-04-01
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh
+team 1 is:-Punjab Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1359477
+date is:-2023-04-01
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Delhi Capitals
+id is:-1359478
+date is:-2023-04-02
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1359479
+date is:-2023-04-02
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Mumbai Indians
+team 2 is:-Royal Challengers Bangalore
+id is:-1359480
+date is:-2023-04-03
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Lucknow Super Giants
+id is:-1359481
+date is:-2023-04-04
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Delhi Capitals
+team 2 is:-Gujarat Titans
+id is:-1359482
+date is:-2023-04-05
+venue is:-Barsapara Cricket Stadium, Guwahati
+team 1 is:-Punjab Kings
+team 2 is:-Rajasthan Royals
+id is:-1359483
+date is:-2023-04-06
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-1359484
+date is:-2023-04-07
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Lucknow Super Giants
+id is:-1359485
+date is:-2023-04-08
+venue is:-Barsapara Cricket Stadium, Guwahati
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-1359486
+date is:-2023-04-08
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1359487
+date is:-2023-04-09
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Kolkata Knight Riders
+id is:-1359488
+date is:-2023-04-09
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Punjab Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1359489
+date is:-2023-04-10
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Lucknow Super Giants
+id is:-1359490
+date is:-2023-04-11
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1359491
+date is:-2023-04-12
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-1359492
+date is:-2023-04-13
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh
+team 1 is:-Punjab Kings
+team 2 is:-Gujarat Titans
+id is:-1359493
+date is:-2023-04-14
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1359494
+date is:-2023-04-15
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1359495
+date is:-2023-04-15
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Punjab Kings
+id is:-1359496
+date is:-2023-04-16
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1359497
+date is:-2023-04-16
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Rajasthan Royals
+id is:-1359498
+date is:-2023-04-17
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Chennai Super Kings
+team 2 is:-Royal Challengers Bangalore
+id is:-1359499
+date is:-2023-04-18
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Mumbai Indians
+team 2 is:-Sunrisers Hyderabad
+id is:-1359500
+date is:-2023-04-19
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Lucknow Super Giants
+team 2 is:-Rajasthan Royals
+id is:-1359501
+date is:-2023-04-20
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Punjab Kings
+id is:-1359502
+date is:-2023-04-20
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1359503
+date is:-2023-04-21
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Chennai Super Kings
+id is:-1359504
+date is:-2023-04-22
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Gujarat Titans
+team 2 is:-Lucknow Super Giants
+id is:-1359505
+date is:-2023-04-22
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Punjab Kings
+team 2 is:-Mumbai Indians
+id is:-1359506
+date is:-2023-04-23
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-1359507
+date is:-2023-04-23
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1359508
+date is:-2023-04-24
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Delhi Capitals
+team 2 is:-Sunrisers Hyderabad
+id is:-1359509
+date is:-2023-04-25
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Mumbai Indians
+id is:-1359510
+date is:-2023-04-26
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bangalore
+id is:-1359511
+date is:-2023-04-27
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-1359512
+date is:-2023-04-28
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh
+team 1 is:-Lucknow Super Giants
+team 2 is:-Punjab Kings
+id is:-1359513
+date is:-2023-04-29
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Gujarat Titans
+id is:-1359514
+date is:-2023-04-29
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1359515
+date is:-2023-04-30
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Punjab Kings
+id is:-1359516
+date is:-2023-04-30
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Rajasthan Royals
+team 2 is:-Mumbai Indians
+id is:-1359517
+date is:-2023-05-01
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Lucknow Super Giants
+id is:-1359518
+date is:-2023-05-02
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Delhi Capitals
+team 2 is:-Gujarat Titans
+id is:-1359519
+date is:-2023-05-03
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Chennai Super Kings
+id is:-1359520
+date is:-2023-05-03
+venue is:-Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh
+team 1 is:-Punjab Kings
+team 2 is:-Mumbai Indians
+id is:-1359521
+date is:-2023-05-04
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1359522
+date is:-2023-05-05
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Rajasthan Royals
+team 2 is:-Gujarat Titans
+id is:-1359523
+date is:-2023-05-06
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Mumbai Indians
+team 2 is:-Chennai Super Kings
+id is:-1359524
+date is:-2023-05-06
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Delhi Capitals
+id is:-1359525
+date is:-2023-05-07
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Lucknow Super Giants
+id is:-1359526
+date is:-2023-05-07
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Rajasthan Royals
+team 2 is:-Sunrisers Hyderabad
+id is:-1359527
+date is:-2023-05-08
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Punjab Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1359528
+date is:-2023-05-09
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Mumbai Indians
+id is:-1359529
+date is:-2023-05-10
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1359530
+date is:-2023-05-11
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1359531
+date is:-2023-05-12
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Mumbai Indians
+team 2 is:-Gujarat Titans
+id is:-1359532
+date is:-2023-05-13
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Lucknow Super Giants
+id is:-1359533
+date is:-2023-05-13
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Punjab Kings
+team 2 is:-Delhi Capitals
+id is:-1359534
+date is:-2023-05-14
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Rajasthan Royals
+id is:-1359535
+date is:-2023-05-14
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Kolkata Knight Riders
+id is:-1359536
+date is:-2023-05-15
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Sunrisers Hyderabad
+id is:-1359537
+date is:-2023-05-16
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Mumbai Indians
+id is:-1359538
+date is:-2023-05-17
+venue is:-Himachal Pradesh Cricket Association Stadium, Dharamsala
+team 1 is:-Delhi Capitals
+team 2 is:-Punjab Kings
+id is:-1359539
+date is:-2023-05-18
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bangalore
+id is:-1359540
+date is:-2023-05-19
+venue is:-Himachal Pradesh Cricket Association Stadium, Dharamsala
+team 1 is:-Punjab Kings
+team 2 is:-Rajasthan Royals
+id is:-1359541
+date is:-2023-05-20
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Chennai Super Kings
+team 2 is:-Delhi Capitals
+id is:-1359542
+date is:-2023-05-20
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Lucknow Super Giants
+team 2 is:-Kolkata Knight Riders
+id is:-1359543
+date is:-2023-05-21
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-1359544
+date is:-2023-05-21
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Royal Challengers Bangalore
+team 2 is:-Gujarat Titans
+id is:-1370350
+date is:-2023-05-23
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Gujarat Titans
+id is:-1370351
+date is:-2023-05-24
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Mumbai Indians
+team 2 is:-Lucknow Super Giants
+id is:-1370352
+date is:-2023-05-26
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Mumbai Indians
+id is:-1370353
+date is:-2023-05-29
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Chennai Super Kings
+id is:-1422119
+date is:-2024-03-22
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Chennai Super Kings
+id is:-1422120
+date is:-2024-03-23
+venue is:-Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur
+team 1 is:-Delhi Capitals
+team 2 is:-Punjab Kings
+id is:-1422121
+date is:-2024-03-23
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Sunrisers Hyderabad
+id is:-1422122
+date is:-2024-03-24
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Rajasthan Royals
+team 2 is:-Lucknow Super Giants
+id is:-1422123
+date is:-2024-03-24
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Mumbai Indians
+id is:-1422124
+date is:-2024-03-25
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Punjab Kings
+team 2 is:-Royal Challengers Bengaluru
+id is:-1422125
+date is:-2024-03-26
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Gujarat Titans
+id is:-1422126
+date is:-2024-03-27
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-1422127
+date is:-2024-03-28
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Rajasthan Royals
+team 2 is:-Delhi Capitals
+id is:-1422128
+date is:-2024-03-29
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Kolkata Knight Riders
+id is:-1422129
+date is:-2024-03-30
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Punjab Kings
+id is:-1422130
+date is:-2024-03-31
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Gujarat Titans
+id is:-1422131
+date is:-2024-03-31
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam
+team 1 is:-Delhi Capitals
+team 2 is:-Chennai Super Kings
+id is:-1422132
+date is:-2024-04-01
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1422133
+date is:-2024-04-02
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Lucknow Super Giants
+team 2 is:-Royal Challengers Bengaluru
+id is:-1422134
+date is:-2024-04-03
+venue is:-Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Delhi Capitals
+id is:-1422135
+date is:-2024-04-04
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Punjab Kings
+id is:-1422136
+date is:-2024-04-05
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1422137
+date is:-2024-04-06
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Rajasthan Royals
+id is:-1422138
+date is:-2024-04-07
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Mumbai Indians
+team 2 is:-Delhi Capitals
+id is:-1422139
+date is:-2024-04-07
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Gujarat Titans
+id is:-1426260
+date is:-2024-04-08
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Chennai Super Kings
+id is:-1426261
+date is:-2024-04-09
+venue is:-Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Punjab Kings
+id is:-1426262
+date is:-2024-04-10
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Rajasthan Royals
+team 2 is:-Gujarat Titans
+id is:-1426263
+date is:-2024-04-11
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Mumbai Indians
+id is:-1426264
+date is:-2024-04-12
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Delhi Capitals
+id is:-1426265
+date is:-2024-04-13
+venue is:-Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur
+team 1 is:-Punjab Kings
+team 2 is:-Rajasthan Royals
+id is:-1426266
+date is:-2024-04-14
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Lucknow Super Giants
+team 2 is:-Kolkata Knight Riders
+id is:-1426267
+date is:-2024-04-14
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Chennai Super Kings
+team 2 is:-Mumbai Indians
+id is:-1426268
+date is:-2024-04-15
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Royal Challengers Bengaluru
+id is:-1426269
+date is:-2024-04-16
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Rajasthan Royals
+id is:-1426270
+date is:-2024-04-17
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Delhi Capitals
+id is:-1426271
+date is:-2024-04-18
+venue is:-Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur
+team 1 is:-Mumbai Indians
+team 2 is:-Punjab Kings
+id is:-1426272
+date is:-2024-04-19
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Chennai Super Kings
+team 2 is:-Lucknow Super Giants
+id is:-1426273
+date is:-2024-04-20
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Delhi Capitals
+id is:-1426274
+date is:-2024-04-21
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Royal Challengers Bengaluru
+id is:-1426275
+date is:-2024-04-21
+venue is:-Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur
+team 1 is:-Punjab Kings
+team 2 is:-Gujarat Titans
+id is:-1426276
+date is:-2024-04-22
+venue is:-Sawai Mansingh Stadium, Jaipur
+team 1 is:-Mumbai Indians
+team 2 is:-Rajasthan Royals
+id is:-1426277
+date is:-2024-04-23
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Lucknow Super Giants
+id is:-1426278
+date is:-2024-04-24
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Delhi Capitals
+team 2 is:-Gujarat Titans
+id is:-1426279
+date is:-2024-04-25
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Sunrisers Hyderabad
+id is:-1426280
+date is:-2024-04-26
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Punjab Kings
+id is:-1426281
+date is:-2024-04-27
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Delhi Capitals
+team 2 is:-Mumbai Indians
+id is:-1426282
+date is:-2024-04-27
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Lucknow Super Giants
+team 2 is:-Rajasthan Royals
+id is:-1426283
+date is:-2024-04-28
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Royal Challengers Bengaluru
+id is:-1426284
+date is:-2024-04-28
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1426285
+date is:-2024-04-29
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Delhi Capitals
+team 2 is:-Kolkata Knight Riders
+id is:-1426286
+date is:-2024-04-30
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Mumbai Indians
+team 2 is:-Lucknow Super Giants
+id is:-1426287
+date is:-2024-05-01
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Chennai Super Kings
+team 2 is:-Punjab Kings
+id is:-1426288
+date is:-2024-05-02
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-1426289
+date is:-2024-05-03
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1426290
+date is:-2024-05-04
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Gujarat Titans
+team 2 is:-Royal Challengers Bengaluru
+id is:-1426291
+date is:-2024-05-05
+venue is:-Himachal Pradesh Cricket Association Stadium, Dharamsala
+team 1 is:-Chennai Super Kings
+team 2 is:-Punjab Kings
+id is:-1426292
+date is:-2024-05-05
+venue is:-Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Lucknow Super Giants
+id is:-1426293
+date is:-2024-05-06
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Mumbai Indians
+id is:-1426294
+date is:-2024-05-07
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Delhi Capitals
+team 2 is:-Rajasthan Royals
+id is:-1426295
+date is:-2024-05-08
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Lucknow Super Giants
+team 2 is:-Sunrisers Hyderabad
+id is:-1426296
+date is:-2024-05-09
+venue is:-Himachal Pradesh Cricket Association Stadium, Dharamsala
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Punjab Kings
+id is:-1426297
+date is:-2024-05-10
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Gujarat Titans
+team 2 is:-Chennai Super Kings
+id is:-1426298
+date is:-2024-05-11
+venue is:-Eden Gardens, Kolkata
+team 1 is:-Kolkata Knight Riders
+team 2 is:-Mumbai Indians
+id is:-1426299
+date is:-2024-05-12
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Rajasthan Royals
+team 2 is:-Chennai Super Kings
+id is:-1426300
+date is:-2024-05-12
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Delhi Capitals
+id is:-1426302
+date is:-2024-05-14
+venue is:-Arun Jaitley Stadium, Delhi
+team 1 is:-Delhi Capitals
+team 2 is:-Lucknow Super Giants
+id is:-1426303
+date is:-2024-05-15
+venue is:-Barsapara Cricket Stadium, Guwahati
+team 1 is:-Rajasthan Royals
+team 2 is:-Punjab Kings
+id is:-1426305
+date is:-2024-05-17
+venue is:-Wankhede Stadium, Mumbai
+team 1 is:-Lucknow Super Giants
+team 2 is:-Mumbai Indians
+id is:-1426306
+date is:-2024-05-18
+venue is:-M Chinnaswamy Stadium, Bengaluru
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Chennai Super Kings
+id is:-1426307
+date is:-2024-05-19
+venue is:-Rajiv Gandhi International Stadium, Uppal, Hyderabad
+team 1 is:-Punjab Kings
+team 2 is:-Sunrisers Hyderabad
+id is:-1426309
+date is:-2024-05-21
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+id is:-1426310
+date is:-2024-05-22
+venue is:-Narendra Modi Stadium, Ahmedabad
+team 1 is:-Royal Challengers Bengaluru
+team 2 is:-Rajasthan Royals
+id is:-1426311
+date is:-2024-05-24
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Rajasthan Royals
+id is:-1426312
+date is:-2024-05-26
+venue is:-MA Chidambaram Stadium, Chepauk, Chennai
+team 1 is:-Sunrisers Hyderabad
+team 2 is:-Kolkata Knight Riders
+Hibernate: select m1_0.team1,count(*) from match m1_0 group by m1_0.team1
+Hibernate: select m1_0.team2,count(*) from match m1_0 group by m1_0.team2
+Hibernate: select m1_0.match_winner,count(*) from match m1_0 group by m1_0.match_winner
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+persists
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+Hibernate: select t1_0.id,t1_0.team_name,t1_0.total_matches,t1_0.total_wins from team t1_0 where t1_0.id=?
+merge
+2024-07-09T16:17:56.046-05:00  INFO 18288 --- [ipldashboard] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=importUserJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 1s646ms
+]]></system-out>
+  </testcase>
+</testsuite>
